@@ -31,17 +31,17 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     body: Container(
-         decoration: BoxDecoration(
-            gradient: LinearGradient(
-      begin: Alignment.topLeft, // Adjust based on the angle you want
-      end: Alignment.bottomRight,
-      colors: [
-        Color(0xFF3A6FE2), // Blue
-        Color(0xFF9E7BF5), // Purple
-      ],
-    ),
-  ),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft, // Adjust based on the angle you want
+            end: Alignment.bottomRight,
+            colors: [
+              Color(0xFF3A6FE2), // Blue
+              Color(0xFF9E7BF5), // Purple
+            ],
+          ),
+        ),
         child: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -207,7 +207,7 @@ class PostCard extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12.0),
-        side: BorderSide( color: Color.fromARGB(255, 1, 51, 179) , width: 1),
+        side: BorderSide(color: Color.fromARGB(255, 1, 51, 179), width: 1),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -274,7 +274,8 @@ class PostCard extends StatelessWidget {
                   onPressed: () {},
                 ),
                 IconButton(
-                  icon: const Icon(Icons.chat_bubble_outline, color: Colors.blue),
+                  icon:
+                      const Icon(Icons.chat_bubble_outline, color: Colors.blue),
                   onPressed: () {},
                 ),
                 IconButton(
@@ -293,4 +294,3 @@ class PostCard extends StatelessWidget {
     );
   }
 }
-
